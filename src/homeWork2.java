@@ -1,4 +1,4 @@
-public class homeWork2 {
+public class HomeWork2 {
     public static void main(String[] args){
         int P = CountP();
         System.out.println(P);
@@ -44,4 +44,3 @@ public class homeWork2 {
 
     }
 }
-
