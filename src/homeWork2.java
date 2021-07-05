@@ -1,23 +1,23 @@
 public class HomeWork2 {
-    public static void main(String[] args){
-        int P = CountP();
+    public static void main(String[] args)
+    {
+        int a = 10;
+        int b = 5;
+        boolean P = Count(a, b);
         System.out.println(P);
-        System.out.println((P >= 10)&&(P <= 20));
 
         printNumber(5);
-        boolean step = compareNumbers();
+
+        boolean step = compareNumbers(-2);
         System.out.println(step);
 
         printMessage(3,"Hello World!");
-
-
     }
 
-    public static int CountP() {
-        int a = 10;
-        int b = 5;
+    public static boolean Count(int a, int b) {
 
-        return (a+b);
+        int sum = a + b;
+        return (10 < sum && sum <= 20);
     }
 
     public static void  printNumber(int number) {
@@ -30,9 +30,8 @@ public class HomeWork2 {
         }
     }
 
-    public static boolean compareNumbers() {
-        int x = -15;
-        return (x < 0);
+    public static boolean compareNumbers(int number) {
+        return (number < 0);
     }
 
     public static void printMessage(int count, String message) {
